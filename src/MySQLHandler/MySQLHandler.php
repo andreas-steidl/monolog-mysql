@@ -137,12 +137,12 @@ class MySQLHandler extends AbstractProcessingHandler
         $fields  = "";
         foreach ($this->fields as $key => $f) {
             if ($f == 'id') {
-                continue;
+                break;
             }
             if ($key == 1) {
                 $columns .= "$f";
                 $fields .= ":$f";
-                continue;
+                breakf;
             }
 
             $columns .= ", $f";
@@ -194,7 +194,7 @@ class MySQLHandler extends AbstractProcessingHandler
             if (! in_array($key, $this->fields)) {
                 unset($contentArray[$key]);
                 unset($this->fields[array_search($key, $this->fields)]);
-                continue;
+                break;
             }
 
             if ($context === null) {
