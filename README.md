@@ -1,3 +1,5 @@
+Fork from:waza-ari/monolog-mysql
+
 monolog-mysql
 =============
 
@@ -13,7 +15,7 @@ As I do not use this project myself anymore and I do not find the time to mainta
 monolog-mysql is available via composer. Just add the following line to your required section in composer.json and do a `php composer.phar update`.
 
 ```
-"wazaari/monolog-mysql": ">1.0.0"
+"andreas-steidl/monolog-mysql": ">1.0.0"
 ```
 
 # Usage
